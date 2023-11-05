@@ -15,6 +15,7 @@ jobs:
       - name: List files
         run: ls -la
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get code
